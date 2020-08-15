@@ -8,7 +8,7 @@ console.log(source);
 const test = app.use(express.static(source));
 console.log(test);
 
-app.listen(3030, () => {
+app.listen(port, () => {
   console.log("Server is up on port " + port);
 });
 
