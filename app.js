@@ -3,10 +3,9 @@ const express = require("express");
 const app = express();
 const router = new express.Router();
 const port = process.env.PORT || 3030;
-const source = path.join(__dirname, "./src/");
+const source = "./pelumi-calculategp/public";
 console.log(source);
 const test = app.use(express.static(source));
-console.log(test);
 
 app.listen(port, () => {
   console.log("Server is up on port " + port);
